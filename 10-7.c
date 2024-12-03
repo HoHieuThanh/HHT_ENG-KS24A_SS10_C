@@ -4,7 +4,7 @@ int main() {
     int n, m;
     printf("Nhap so dong: ");
     scanf("%d", &n);
-    printf("Nh?p so cot: ");
+    printf("Nhap so cot: ");
     scanf("%d", &m);
     int arr[n][m];
     
