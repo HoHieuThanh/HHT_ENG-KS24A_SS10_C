@@ -12,12 +12,13 @@ int main(){
 			count++;
 		}
 	}
-	if(count > 0){
+	if(count != 0){
 		printf("Phan tu %d o vi tri: ", input);
 		for(i=0; i<count; i++){
 			printf("%d ", index[i]);
 		}
-	}
+	}else{
+		printf("Khong tim thay phan tu");
 	
 	return 0;
 }
