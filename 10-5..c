@@ -35,7 +35,7 @@ int main(){
 			start=mid+1;
 		}else{
 			if(flag != -1){
-				printf("Phan tu %d o vi tri %d", item, flag);
+				printf("Phan tu %d o vi tri %d", item, mid);
 				break;
 			}else{
 				printf("Khong tim thay phan tu trong mang");
