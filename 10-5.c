@@ -26,22 +26,20 @@ int main(){
 
 	while(start<=end){
 		mid=(start+end)/2;
-		if(arr[mid]==item){
-			flag++;
-		}
 		if(arr[mid]>item){
 			end= mid-1;
 		}else if(arr[mid]<item){
 			start=mid+1;
 		}else{
-			if(flag != -1){
-				printf("Phan tu %d o vi tri %d", item, mid);
-				break;
-			}else{
-				printf("Khong tim thay phan tu trong mang");
-				break;
-			}
+			flag++;
+			break;
 		}
 	}
+	if(flag != -1){
+		printf("Phan tu %d o vi tri %d", item, mid);
+	}else{
+		printf("Khong tim thay phan tu trong mang");
+	}
+
 	return 0;
 }
